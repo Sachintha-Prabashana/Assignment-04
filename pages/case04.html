@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .drop {
+            width: 5px;
+            height: 5px;
+            border: 5px solid red;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: water-drop 3s infinite;
+            
+        }
+
+        @keyframes water-drop {
+            from {
+                width: 5px;
+                height: 5px;
+                border: 5px solid red;
+            }
+            to {
+                width: 300px;
+                height: 300px;
+                border: 1px solid red;
+                opacity: 0;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="drop"></div>
+</body>
+</html>
