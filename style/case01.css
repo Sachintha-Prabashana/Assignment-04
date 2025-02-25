@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+}
+
+.menu-bar {
+    width: 50px;
+    height: 50px;
+    background-color: #8B5DFF;
+    position: absolute;
+    top: 20%;
+    display: flex;
+    align-items: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    transition: width 1s ease-in-out;
+}
+
+.menu-bar-content {
+    position: absolute;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.menu-bar-content h5 {
+    color: #fff;
+    font-size: 20px;
+    margin-left: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    white-space: nowrap;
+}
+
+.menu-bar i {
+    color: #fff;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.menu-bar:hover {
+    width: 200px;
+}
+
+.menu-bar:hover h5 {
+    opacity: 1;
+}
+
+.menu-2 {
+    top: 35%;
+}
+
+.menu-3 {
+    top: 50%;
+}
+
+.menu-4 {
+    top: 65%;
+}
+
+.menu-5 {
+    top: 80%;
+}
