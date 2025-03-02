@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+  }
+  
+  .box {
+    width: 150px;
+    height: 80px;
+    background-color: blue;
+    border-radius: 12px;
+    position: absolute;
+  
+    animation: go-around-right 10s ease-in-out infinite alternate;
+  }
+  
+  @keyframes go-around-right {
+    0% {
+      top: 0;
+      left: 0;
+    }
+  
+    25% {
+      top: 0;
+      left: calc(100% - 150px);
+      transform: rotate(180deg);
+      background-color: rgb(247, 247, 61);
+    }
+  
+    50% {
+      top: calc(100% - 100px);
+      left: calc(100% - 150px);
+      transform: rotate(360deg);
+      background-color: red;
+    }
+  
+    75% {
+      top: calc(100% - 80px);
+      left: 0;
+      transform: rotate(180deg);
+      background-color: rgb(221, 82, 152);
+    }
+  
+    100% {
+      top: 0;
+      left: 0;
+      background-color: rgb(234, 187, 68);
+    }
+  }
